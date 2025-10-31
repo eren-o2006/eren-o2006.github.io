@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOUVRE Güvenli Ödeme</title>
+    <link rel="icon" type="image/x-icon" href="../img/icon.jpg">
+    <link rel="stylesheet" href="bilet-odeme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="menü">
+            <a href="../index.html"><h1>LOUVRE</h1></a>
+            <hr style="color: black;">
+            <h3>Güvenli Ödeme</h3>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col-75">
+          <div class="container">
+            <form action="bilet-ok.html">
+      
+              <div class="row">
+                <div class="col-50">
+                  <h3>Fatura Adresi</h3>
+                  <label for="fname"><i class="fa fa-user"></i> Tam Ad</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Eren Ö.">
+                  <label for="email"><i class="fa fa-envelope"></i> E-Posta</label>
+                  <input type="text" id="email" name="email" placeholder="eren@example.com">
+                  <label for="adr"><i class="fa fa-address-card-o"></i> Adres</label>
+                  <input type="text" id="adr" name="address" placeholder="34158 Bakıköy ...">
+                  <label for="city"><i class="fa fa-institution"></i> İl</label>
+                  <input type="text" id="city" name="city" placeholder="İstanbul">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="state">İlçe</label>
+                      <input type="text" id="state" name="state" placeholder="Bakırköy">
+                    </div>
+                    <div class="col-50">
+                      <label for="zip">Posta Kodu</label>
+                      <input type="text" id="zip" name="zip" placeholder="34158">
+                    </div>
+                  </div>
+                </div>
+      
+                <div class="col-50">
+                  <h3>Ödeme</h3>
+                  <label for="fname">Kabul Edilen Kartlar</label>
+                  <div class="icon-container">
+                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                    <i class="fa fa-cc-amex" style="color:blue;"></i>
+                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                    <i class="fa fa-cc-discover" style="color:orange;"></i>
+                  </div>
+                  <label for="cname">Kart Üzerindeki İsim</label>
+                  <input type="text" id="cname" name="cardname" placeholder="Ad Soyad">
+                  <label for="ccnum">Kart Numarası</label>
+                  <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                  <label for="expmonth">Ay</label>
+                  <input type="text" id="expmonth" name="expmonth" placeholder="Eylül">
+      
+                  <div class="row">
+                    <div class="col-50">
+                      <label for="expyear">Yıl</label>
+                      <input type="text" id="expyear" name="expyear" placeholder="2025">
+                    </div>
+                    <div class="col-50">
+                      <label for="cvv">CVV</label>
+                      <input type="text" id="cvv" name="cvv" placeholder="352">
+                    </div>
+                  </div>
+                </div>
+      
+              </div>
+              <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Teslimat adresi fatura adresiyle aynı
+              </label>
+              <input type="submit" value="Ödeme sayfasına devam edin" class="btn">
+            </form>
+          </div>
+        </div>
+      
+        <div class="col-25">
+          <div class="container">
+            <h4>Sepet
+              <span class="price" style="color:black">
+                <i class="fa fa-shopping-cart"></i>
+                <b>1</b>
+              </span>
+            </h4>
+            <p>Öğrenci Bilet <span class="price">₺50</span></p>
+            <hr>
+            <p>Toplam <span class="price" style="color:black"><b>₺50</b></span></p>
+          </div>
+        </div>
+      </div>
+</body>
+</html>
